@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TrippleA - Explore extraordinary art, curated exhibitions, and premium artworks. Discover emerging and established artists from around the world." />
+    <meta name="keywords" content="art gallery, contemporary art, artworks, artists, curation, exhibitions" />
+    <meta name="author" content="TrippleA Gallery" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Triple-A — Art Gallery" />
+    <meta property="og:description" content="Explore extraordinary art and curated exhibitions from world-renowned artists" />
+    <title>Triple-A — Art Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+  </head>
+  <body>
+    <header id="site-nav"></header>
+
+    <main id="main">
+      <section id="home" class="hero"></section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Curated Artworks</h2>
+            <p>Explore our carefully curated collection of extraordinary artworks.</p>
+          </div>
+
+          <div class="filters">
+            <div class="filter-types">
+              <button class="filter-type active" data-type="style">Style</button>
+              <button class="filter-type" data-type="medium">Medium</button>
+              <button class="filter-type" data-type="artist">Artist</button>
+            </div>
+            <div id="filter-options" class="filter-options"></div>
+          </div>
+
+          <div id="art-grid" class="masonry-grid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Featured Products</h2>
+            <p>Exceptional artworks available for purchase now.</p>
+          </div>
+          <div id="featured-products" class="shop-grid"></div>
+          <div style="text-align:center;margin-top:24px">
+            <a href="shop.html" class="btn">View All Products</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-cta" class="section about-preview">
+        <div class="container">
+          <h2>Where Art Meets Passion</h2>
+          <p>Founded in 1999, TrippleA connects artists with audiences through curated exhibitions and programs.</p>
+          <a href="about.html" class="link-btn">Learn More About Us →</a>
+        </div>
+      </section>
+
+      <section id="blog-preview" class="section blog-preview">
+        <div class="container">
+          <h2>Latest from Our Blog</h2>
+          <p>Insights, interviews, and stories from the art world.</p>
+          <a href="blog.html" class="btn">Visit Our Blog</a>
+        </div>
+      </section>
+
+      <section id="shop-preview" class="section shop-preview">
+        <div class="container">
+          <h2>Shop Curated Art</h2>
+          <p>Discover and purchase extraordinary artworks from our collection.</p>
+          <a href="shop.html" class="btn">Browse Shop</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <img src="images/logo.png" alt="Triple-A Gallery Logo" style="width:60px;height:60px;border-radius:50%;object-fit:contain;margin-bottom:12px">
+          <h4 style="margin:8px 0">Triple-A Gallery</h4>
+          <p>Curating extraordinary art experiences since 1999.</p>
+          <div class="footer-links-social">
+            <a href="#" title="Follow on Instagram">Instagram</a>
+            <a href="#" title="Follow on Twitter">Twitter</a>
+            <a href="#" title="Follow on Facebook">Facebook</a>
+          </div>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <nav class="footer-nav">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Triple-A Gallery. All rights reserved.</p>
+      </div>
+    </footer>
+
+   
+
+    <!-- Detail drawer -->
+    <div id="detail-drawer" class="detail-drawer" hidden>
+      <button id="detail-close" class="close">✕</button>
+      <div id="detail-content"></div>
+    </div>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
