@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Shop Triple-A Gallery - Browse and purchase extraordinary artworks from emerging and established artists." />
+    <meta name="keywords" content="shop, buy art, artworks, prints, paintings, sculptures, original art" />
+    <meta name="author" content="Triple-A Gallery" />
+    <title>Shop — Triple-A Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+  </head>
+  <body>
+    <header id="site-nav"></header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1>Shop TrippleA</h1>
+          <p>Discover and purchase extraordinary artworks, limited editions, and prints from our curated collection.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filters-section">
+            <div class="filter-types">
+              <button class="filter-type active" data-type="style">By Style</button>
+              <button class="filter-type" data-type="medium">By Medium</button>
+              <button class="filter-type" data-type="artist">By Artist</button>
+            </div>
+            <div id="filter-options" class="filter-options"></div>
+          </div>
+
+          <div id="shop-grid" class="shop-grid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Why Shop at TrippleA?</h2>
+          <div class="shop-benefits">
+            <div class="benefit">
+              <h3>✓ Authentic Works</h3>
+              <p>Every artwork is carefully authenticated and comes with certification.</p>
+            </div>
+            <div class="benefit">
+              <h3>✓ Expert Curation</h3>
+              <p>Our team curates each piece to ensure the highest quality and artistic merit.</p>
+            </div>
+            <div class="benefit">
+              <h3>✓ Artist Support</h3>
+              <p>A portion of proceeds supports emerging artists and art education initiatives.</p>
+            </div>
+            <div class="benefit">
+              <h3>✓ Secure Shipping</h3>
+              <p>Professional packing and insured shipping to ensure your artwork arrives safely.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-items">
+            <div class="faq-item">
+              <h4>How do I purchase an artwork?</h4>
+              <p>Browse our collection, select your desired piece, and proceed to checkout. Our team will handle authentication, professional packaging, and shipping.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Can I request a custom commission?</h4>
+              <p>Yes! We work with artists to create custom commissions. Please contact us for more information.</p>
+            </div>
+            <div class="faq-item">
+              <h4>What payment methods do you accept?</h4>
+              <p>We accept all major credit cards, wire transfers, and secure payment services.</p>
+            </div>
+            <div class="faq-item">
+              <h4>Do you offer international shipping?</h4>
+              <p>Yes, we ship internationally with full insurance. Shipping costs are calculated based on destination.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h4>TrippleA Gallery</h4>
+          <p>Curating extraordinary art experiences since 1999.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Triple-A Gallery. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" hidden>
+      <div class="lightbox-inner">
+        <button id="lightbox-close" class="close" aria-label="Close">✕</button>
+        <img id="lightbox-img" src="" alt="" />
+        <div id="lightbox-meta" style="color:#fff;text-align:center;margin-top:12px;font-family:var(--font-montserrat)"></div>
+      </div>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
